@@ -20,6 +20,9 @@
 //      })
 //   })
 // })
+
+
+
 ////////////////////////////////////////////////////////////////
 async function main(){
 
@@ -54,16 +57,9 @@ function displayWeatherInfos(data){
   
 }
 
-main();
+//main();
 ////////////////////////////////////////////////////////////////
 
 // function capitalize(str){
 //     return str[0].toUpperCase() + str.slice(1);
 // };
-
-// function main(){
-//   fetch('https://api.ipify.org?format=json')
-//   .then(resultIp => resultIp.json())
-//   .then(json => console.log(json.ip))
-   
-// }

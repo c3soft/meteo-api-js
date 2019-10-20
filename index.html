@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Météo</title>
     <meta charset="UTF-8">
@@ -8,7 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
     <!-- https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css -->
 </head>
+
 <body>
+    <div id="result">
+    </div>
     <section id="app">
         <h2>
             <span id="city">City</span>
@@ -16,11 +20,49 @@
         </h2>
         <i class="wi wi-day-hail"></i>
         <h3>
-            <span id="temperature">25</span> °C (<span id ="conditions">Description</span>)
+            <span id="temperature">25</span> °C (<span id="conditions">Description</span>)
         </h3>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', init, false);
+
+        function init() {
+            adsBlocked(function (blocked) {
+                if (blocked) {
+                    document.getElementById('result').innerHTML = 'ads are blocked';
+                } else {
+                    document.getElementById('result').innerHTML = 'ads are not blocked';
+                }
+            })
+        }
+
+        function adsBlocked(callback) {
+            var testURL = ' https://googleads.g.doubleclick.net/pagead/id'
+
+            var myInit = {
+                method: 'HEAD',
+                mode: 'no-cors'
+            };
+
+            var myRequest = new Request(testURL, myInit);
+
+            fetch(myRequest).then(function (response) {
+                return response;
+            }).then(function (response) {
+                console.log(response);
+                callback(false)
+            }).catch(function (e) {
+                console.log(e)
+                callback(true)
+            });
+        }
+    </script>
+
+
+
     <script src="./app.js"></script>
 
-    
+
 </body>
+
 </html>
