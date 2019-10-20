@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(51, 50, 50);
+}
+h2{
+    font-size: 3em;
+}
+
+i.wi{
+    font-size: 5em;
+    line-height: 3em;
+
+}
+h3{
+    font-size: 2em;
+}
+.tooltip{
+    display: none;
+}
