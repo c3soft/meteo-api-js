@@ -1,3 +1,22 @@
+.clouds{
+    background-image: url(https://cdn.pixabay.com/photo/2014/07/05/08/58/cloudscape-384672__340.jpg);
+}
+.clear{
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/06/22/55/sun-3588618__340.jpg);
+}
+.rain{
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/19/20/14/water-815271__340.jpg);
+}
+.snow{
+    background-image: url(https://cdn.pixabay.com/photo/2012/03/01/01/35/winter-20248__340.jpg);
+}
+.mist{
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/19/11/21/trees-1209660__340.jpg);
+}
+.drizzle{
+    background-image: url(https://cdn.pixabay.com/photo/2018/11/23/03/34/rain-3833190__340.jpg);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +27,11 @@ body{
     align-items: center;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(51, 50, 50);
+    color: rgb(226, 220, 220);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+
 }
 h2{
     font-size: 3em;
