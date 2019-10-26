@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .clouds{
     background-image: url(https://cdn.pixabay.com/photo/2015/01/08/05/07/sky-592415__340.jpg);
 }
@@ -17,11 +18,14 @@
     background-image: url(https://cdn.pixabay.com/photo/2018/11/23/03/34/rain-3833190__340.jpg);
 }
 
+=======
+>>>>>>> f40f92e8c4ef65c29752cd5352a9dfbe79bb8b53
 body{
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow: hidden;
+<<<<<<< HEAD
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
@@ -69,11 +73,23 @@ h2:hover .tooltip{
     top: -30px;
     opacity: 1;
     display: block;
+=======
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(51, 50, 50);
+}
+h2{
+    font-size: 3em;
+>>>>>>> f40f92e8c4ef65c29752cd5352a9dfbe79bb8b53
 }
 
 i.wi{
     font-size: 5em;
     line-height: 3em;
+<<<<<<< HEAD
 }
 
 h3{
@@ -92,4 +108,13 @@ h3{
     padding: 10px;
     font-size: 12px;
     transition: top .5s;
+=======
+
+}
+h3{
+    font-size: 2em;
+}
+.tooltip{
+    display: none;
+>>>>>>> f40f92e8c4ef65c29752cd5352a9dfbe79bb8b53
 }
