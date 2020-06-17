@@ -1,0 +1,96 @@
+.clouds{
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/08/05/07/sky-592415__340.jpg);
+}
+.clear{
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/06/22/55/sun-3588618__340.jpg);
+}
+.rain{
+    background-image: url(https://cdn.pixabay.com/photo/2015/06/19/20/14/water-815271__340.jpg);
+}
+.snow{
+    background-image: url(https://cdn.pixabay.com/photo/2012/03/01/01/35/winter-20248__340.jpg);
+}
+.mist{
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/19/11/21/trees-1209660__340.jpg);
+}
+.drizzle{
+    background-image: url(https://cdn.pixabay.com/photo/2018/11/23/03/34/rain-3833190__340.jpg);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+header{
+    background-color: coral;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    color: #2e2d2d;
+}
+.adblock{
+    padding: 15px 0 15px 0;;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(216, 210, 210);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+
+}
+.minMax{
+    display: flex;
+}
+
+.tempMax{
+margin: 0 15px 0 15px;
+color: rgb(219, 66, 66);
+}
+
+.tempMin{
+    margin: 0 15px 0 15px;
+    color: rgb(53, 53, 197);
+}
+h2{
+    font-size: 3em;
+    position: relative;
+    cursor: pointer;
+}
+h2:hover .tooltip{
+    top: -50px;
+    opacity: 1;
+    display: block;
+    /* position: relative; */
+    transition: opacity .3s, top 0.5s;
+}
+
+i.wi{
+    font-size: 5em;
+    line-height: 3em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+.tooltip{
+   /* display: none; */
+   opacity: 0;
+   position: absolute;
+    top: 0;
+    left: 10px;
+    color: rgb(226, 220, 220);
+    background-color: #2e2d2d;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+}
