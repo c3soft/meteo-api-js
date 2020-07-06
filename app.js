@@ -15,7 +15,7 @@ async function main(withIP = true) {
       .then(adblockIp => adblockIp.json())
       .then(json => json.ip)
 
-    ville = await fetch(`http://api.ipstack.com/${ip}?access_key=6bc4ff361803b27886a007bec081ef6e`)
+    ville = await fetch(`https://api.ipstack.com/${ip}?access_key=6bc4ff361803b27886a007bec081ef6e`)
       .then(adblockVille => adblockVille.json())
       .then(json => json.city)
   } else {
