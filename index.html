@@ -33,8 +33,9 @@
 
     function init() {
       adsBlocked(function (blocked) {
-        if (blocked) {
-          document.getElementById("adblock").innerHTML = "Adblock detected";
+        if (blocked == true) {
+          // document.getElementById("adblock").innerHTML = "Adblock detected";
+          alert('Adblock detected \n please desable it !')
         } else {
           document.getElementById("adblock").innerHTML = "Adblock is not blocked";
         }
