@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css" />
-  <!-- https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css -->
 </head>
 
 <body>
@@ -16,7 +15,7 @@
   </header>
   <section id="app">
     <h2>
-        <span class="tooltip">Enter an other city</span>
+      <span class="tooltip">Enter an other city</span>
       <span id="city">paris</span>
     </h2>
     <i class="wi wi-day-hail" id="icons"></i>
@@ -24,8 +23,8 @@
       <span id="temperature"></span> °C (<span id="conditions">Description</span>)
     </h3>
     <div class="minMax">
-      <h3 class = "tempMax">Maxi: <span id="tempMax"></span> °C</h3>
-      <h3 class = "tempMin">Mini: <span id="tempMin"></span> °C</h3>
+      <h3 class="tempMax">Maxi: <span id="tempMax"></span> °C</h3>
+      <h3 class="tempMin">Mini: <span id="tempMin"></span> °C</h3>
     </div>
   </section>
   <script>
@@ -34,8 +33,7 @@
     function init() {
       adsBlocked(function (blocked) {
         if (blocked == true) {
-          // document.getElementById("adblock").innerHTML = "Adblock detected";
-          alert('Adblock detected \n please desable it !')
+          alert('Adblock detected \n please desable it !');
         } else {
           document.getElementById("adblock").innerHTML = "Adblock is not blocked";
         }

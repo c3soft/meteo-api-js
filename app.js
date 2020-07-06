@@ -10,7 +10,6 @@ const weatherIcons = {
 ////////////////////////////////////////////////////////////////
 async function main(withIP = true) {
   let ville;
-  // const changCity = document.getElementById('city')
   if (withIP) {
     const ip = await fetch('https://api.ipify.org?format=json')
       .then(adblockIp => adblockIp.json())
@@ -46,12 +45,10 @@ function displayWeatherInfos(data) {
   document.querySelector('i.wi').className = weatherIcons[conditions];
 
   document.body.className = conditions.toLowerCase();
-  //console.log(conditions.toLowerCase())
 }
 const ville = document.querySelector('#city');
 ville.addEventListener('click', () => {
   ville.contentEditable = true;
-  //  alert('aa')
 });
 ville.addEventListener('keydown', (e) => {
   if (e.keyCode === 13) {
@@ -67,5 +64,3 @@ main();
 function capitalize(str) {
   return str[0].toUpperCase() + str.slice(1);
 };
-
-////////////////////////////////////////////////////////////////
