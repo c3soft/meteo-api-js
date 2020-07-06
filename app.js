@@ -15,13 +15,13 @@ async function main(withIP = true) {
       .then(adblockIp => adblockIp.json())
       .then(json => json.ip)
 
-    ville = await fetch(`http://api.ipstack.com/${ip}?access_key=6bc4ff361803b27886a007bec081ef6e`)
+    ville = await fetch(`https://api.ipstack.com/${ip}?access_key=6bc4ff361803b27886a007bec081ef6e`)
       .then(adblockVille => adblockVille.json())
       .then(json => json.city)
   } else {
     ville = document.querySelector('#city').textContent;
   }
-  const meteo = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=ba99412d31367a2f60169d905ef3b403&units=metric&lang=fr`)
+  const meteo = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=ba99412d31367a2f60169d905ef3b403&units=metric&lang=fr`)
     .then(adblockWeather => adblockWeather.json())
     .then(json => json)
   console.log(meteo);
