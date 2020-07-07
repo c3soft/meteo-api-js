@@ -26,6 +26,10 @@
       <h3 class="tempMax">Maxi: <span id="tempMax"></span> °C</h3>
       <h3 class="tempMin">Mini: <span id="tempMin"></span> °C</h3>
     </div>
+    <h4>Presion: <span id="pressure"></span> hPa</h4>
+    <h4>Humidité: <span id="humidity"></span> %</h4>
+    <h4>Vent: <span id="wind"></span> km/h</h4>
+
   </section>
   <script>
     document.addEventListener("DOMContentLoaded", init, false);
@@ -34,8 +38,7 @@
       adsBlocked(function (blocked) {
         if (blocked == true) {
           document.getElementById("adblock").innerHTML = "Adblock is blocked !";
-
-          alert('Adblock detected \n please desable it !');
+          // alert('Adblock detected \n please desable it !');
         } else {
           document.getElementById("adblock").innerHTML = "Adblock is desable !";
         }
@@ -57,16 +60,13 @@
           return response;
         })
         .then(function (response) {
-          // console.log(response);
           callback(false);
         })
         .catch(function (e) {
-          // console.log(e);
           callback(true);
         });
     }
   </script>
-
   <script src="./app.js"></script>
 </body>
 

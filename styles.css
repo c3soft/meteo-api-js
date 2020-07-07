@@ -69,7 +69,6 @@ h2:hover .tooltip{
     top: -50px;
     opacity: 1;
     display: block;
-    /* position: relative; */
     transition: opacity .3s, top 0.5s;
 }
 
@@ -80,6 +79,10 @@ i.wi{
 
 h3{
     font-size: 2em;
+}
+
+h4{
+    font-size: 1.3em;
 }
 
 .tooltip{
