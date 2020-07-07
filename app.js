@@ -26,12 +26,21 @@ function displayWeatherInfos(data) {
   const descriptions = data.weather[0].description;
   const conditions = data.weather[0].main;
 
+  const pressure = data.main.pressure;
+  const humidity = data.main.humidity;
+  const wind = data.wind.speed;
+
   document.querySelector('#city').textContent = name;
   document.querySelector('#temperature').textContent = Math.round(temperature);
   document.querySelector('#tempMax').textContent = Math.round(tempMax);
   document.querySelector('#tempMin').textContent = Math.round(tempMin);
   document.querySelector('#conditions').textContent = capitalize(descriptions);
   document.querySelector('i.wi').className = weatherIcons[conditions];
+
+  document.querySelector('#humidity').textContent = humidity;
+  document.querySelector('#pressure').textContent = pressure;
+  document.querySelector('#wind').textContent = wind;
+
 
   document.body.className = conditions.toLowerCase();
 }
@@ -48,7 +57,6 @@ ville.addEventListener('keydown', (e) => {
 })
 
 main();
-////////////////////////////////////////////////////////////////
 
 function capitalize(str) {
   return str[0].toUpperCase() + str.slice(1);
