@@ -7,40 +7,8 @@ const weatherIcons = {
   "Drizzle": "wi wi-day-sleet"
 }
 
-////////////////////////////////////////////////////////////////
-// async function main(withIP = false) {
-//   let ville;
-//   if (withIP) {
-//     const ip = await fetch('https://api.ipify.org?format=json')
-//       .then(adblockIp => adblockIp.json())
-//       .then(json => json.ip)
-
-//     ville = await fetch(`http://api.ipstack.com/${ip}?access_key=6bc4ff361803b27886a007bec081ef6e`)
-//       .then(adblockVille => adblockVille.json())
-//       .then(json => json.city)
-//   } else {
-//     ville = document.querySelector('#city').textContent;
-//   }
-//   const meteo = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=ba99412d31367a2f60169d905ef3b403&units=metric&lang=fr`)
-//     .then(adblockWeather => adblockWeather.json())
-//     .then(json => json)
-//   console.log(meteo);
-
-//   displayWeatherInfos(meteo)
-// }
-
 async function main() {
   let ville;
-  // if (withIP) {
-  //   const ip = await fetch('https://api.ipify.org?format=json')
-  //     .then(adblockIp => adblockIp.json())
-  //     .then(json => json.ip)
-
-  //   ville = await fetch(`http://api.ipstack.com/${ip}?access_key=6bc4ff361803b27886a007bec081ef6e`)
-  //     .then(adblockVille => adblockVille.json())
-  //     .then(json => json.city)
-  // } else {
-  // }
   ville = document.querySelector('#city').textContent;
   const meteo = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&appid=ba99412d31367a2f60169d905ef3b403&units=metric&lang=fr`)
     .then(adblockWeather => adblockWeather.json())
@@ -49,7 +17,6 @@ async function main() {
 
   displayWeatherInfos(meteo)
 }
-
 
 function displayWeatherInfos(data) {
   const name = data.name;
