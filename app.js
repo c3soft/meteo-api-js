@@ -8,7 +8,7 @@ const weatherIcons = {
 }
 
 ////////////////////////////////////////////////////////////////
-async function main(withIP = true) {
+async function main(withIP = false) {
   let ville;
   if (withIP) {
     const ip = await fetch('https://api.ipify.org?format=json')
