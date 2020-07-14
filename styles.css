@@ -61,16 +61,43 @@ color: rgb(219, 66, 66);
     color: rgb(53, 53, 197);
 }
 h2{
-    font-size: 3em;
+    /* font-size: 3em; */
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer;
+    border: 2px solid #2e2d2d;
+    padding: 0 10px 0 10px; */
 }
 h2:hover .tooltip{
-    top: -50px;
+    top: 100px;
     opacity: 1;
     display: block;
     transition: opacity .3s, top 0.5s;
+} 
+
+h2 .city {
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 15px;
+    /* border: none; */
+    /* outline: none; */
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #DF8E00;
+    
+    /* color: #313131;
+    font-size: 20px;
+    font-weight: 300; */
+    transition: 0.8s ease-out;
 }
+
+h2 .city{
+    font-size: 3em;
+
+  }
+
+
 
 i.wi{
     font-size: 5em;
